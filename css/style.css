@@ -15,7 +15,7 @@ body {
     color: var(--bark-brown);
 }
 
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,13 +25,17 @@ body {
     min-height: 5dvh;
 }
 
-.image-container {
-    max-height: 100%;
+nav {
     display: flex;
-    justify-content: center;
+    gap: 1rem;
 }
 
-.main {
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -39,22 +43,33 @@ body {
     color: white;
 }
 
-.post-article {
+article {
     display: flex;
     flex-direction: column;
 }
 
-.title {
+h2 {
     align-self: center;
     padding: 0.25rem;
     margin: 0.25rem;
 }
 
-.paragraph {
+p {
     padding: 0.5rem;
 }
 
-.footer {
+figure.image-container {
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+figure.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
